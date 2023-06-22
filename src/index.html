@@ -1,62 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Phishing Fun</title>
+  <title>Important Security Notice</title>
   <style>
     body {
-      position: relative;
       text-align: center;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-    }
-    
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url('https://cdn-bobah.nitrocdn.com/mDxsknkPRwKnnzdIpDlNbqFeHfgHfCqS/assets/images/optimized/rev-44115a9/wp-content/uploads/Phishing-email-concept-image-shows-burglar-using-a-fishing-rod..jpeg');
+      background-image: url('https://media.tenor.com/SRy6HR5ibvsAAAAC/phishing-phisher.gif');
       background-repeat: no-repeat;
       background-size: cover;
-      opacity: 0.7; /* Adjust the opacity (0.7) to make it more or less opaque */
-      z-index: -1;
     }
     
     .container {
       padding: 20px;
-      background-color: transparent;
-      margin: 100px auto;
       max-width: 600px;
+      margin: 100px auto;
+      background-color: rgba(255, 255, 255, 0.7);
       border-radius: 10px;
     }
     
-    .container h1, .container p {
+    h1 {
       color: #FF0000;
       font-size: 36px;
       margin-bottom: 20px;
     }
     
-    .container p {
+    p {
       font-size: 18px;
       margin-bottom: 10px;
+    }
+    
+    .warning {
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: #FF0000;
+      color: #FFFFFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    
+    .button:hover {
+      background-color: #DC0000;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Phishing Fun!</h1>
-    <p>Be careful, you're in the deep waters of the Internet!</p>
-    <p>Remember:</p>
-    <ul>
-      <li>Don't click on suspicious links</li>
-      <li>Don't share your personal information with strangers</li>
-      <li>Check the URL before entering sensitive data</li>
-      <li>Stay vigilant!</li>
-    </ul>
-    <p>Have a laugh and stay safe!</p>
+    <h1>Important Security Notice</h1>
+    <div class="warning">
+      <p><strong>Attention:</strong> Potential Phishing Attack Detected</p>
+      <p>We have detected a possible phishing attempt on this website. Your security is our top priority.</p>
+      <p>Please do not enter any personal information or click on any suspicious links.</p>
+      <p>If you believe this is an error or have any concerns, please contact our support team immediately.</p>
+    </div>
+    <a class="button" href="mailto:support@example.com">Contact Support</a>
   </div>
 </body>
 </html>
