@@ -9,22 +9,23 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnNlNjVmdWpxNXd1OWIyZXBneTh2NG1nb3lnbGNjcmJxaGt2ZTY3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RRSmmnFLNbbxtfgeJr/giphy.gif');
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://example.com/animated_background.gif');
       background-repeat: no-repeat;
       background-size: cover;
-      min-height: 100vh; /* Ensure the body takes up the full viewport height */
-      display: flex; /* Use flexbox for centering content */
-      justify-content: center; /* Center content horizontally */
-      align-items: center; /* Center content vertically */
+      background-position: center center;
     }
     
     .container {
       padding: 20px;
-      width: 80%; /* Set a fixed width */
-      max-width: 800px; /* Set a maximum width */
-      background-color: rgba(255, 255, 255, 0.7); /* Adjust alpha value for transparency */
+      width: 80%;
+      max-width: 800px;
+      background-color: rgba(255, 255, 255, 0.7);
       border-radius: 10px;
-      margin: 0 auto; /* Center the text box */
+      margin: 0 auto;
     }
     
     h1 {
@@ -42,19 +43,19 @@
       padding: 20px;
       border-radius: 10px;
       margin-bottom: 20px;
-      background-color: rgba(255, 255, 255, 0.7); /* Adjust alpha value for transparency */
+      background-color: rgba(255, 255, 255, 0.7);
     }
     
     .button {
       display: block;
-      margin: 0 auto; /* Center the button horizontally */
+      margin: 0 auto;
       background-color: #FF0000;
       color: #FFFFFF;
       padding: 10px 20px;
       border-radius: 5px;
       text-decoration: none;
       margin-top: 20px;
-      font-weight: bold; /* Make the text bold */
+      font-weight: bold;
     }
     
     .button:hover {
@@ -62,17 +63,13 @@
     }
     
     .highlight {
-      color: blue; /* Set the desired font color */
+      color: blue;
     }
     
     /* Media Query for Mobile Devices */
     @media only screen and (max-width: 600px) {
-      h1 {
-        font-size: 32px;
-      }
-      
-      p {
-        font-size: 24px;
+      body {
+        background-size: contain;
       }
     }
   </style>
