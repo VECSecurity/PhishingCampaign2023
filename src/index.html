@@ -16,7 +16,7 @@
       background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNnNlNjVmdWpxNXd1OWIyZXBneTh2NG1nb3lnbGNjcmJxaGt2ZTY3MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RRSmmnFLNbbxtfgeJr/giphy.gif');
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center center;
+      background-position: center;
     }
     
     .container {
@@ -66,10 +66,25 @@
       color: blue;
     }
     
-    /* Media Query for Mobile Devices */
+    /* Media Queries */
     @media only screen and (max-width: 600px) {
       body {
         background-size: contain;
+        background-position: center;
+      }
+      
+      h1 {
+        font-size: 32px;
+      }
+      
+      p {
+        font-size: 24px;
+      }
+    }
+    
+    @media only screen and (min-width: 601px) and (max-width: 1200px) {
+      body {
+        background-size: auto 100%;
       }
     }
   </style>
